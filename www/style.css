@@ -1,0 +1,65 @@
+:root {
+    --almost-white: #fefefe;
+    --almost-black: #222;
+    --light-grey: #eee;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    max-width: 40em;
+    min-width: 250px;
+    margin: 0 auto;
+    background-color: var(--almost-white);
+    padding: 0 1em;
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: Georgia;
+    color: var(--almost-black);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+section#content {
+    flex: 1;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    text-transform: lowercase;
+}
+
+ol > li,
+ul > li {
+    text-transform: lowercase;
+}
+
+ul.inline {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding-left: unset;
+}
+
+ul.inline > li {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+ul.inline > li::after {
+    content: "|";
+    margin-left: 0.25em;
+}
+
+ul.inline > li:last-of-type::after {
+    content: unset;
+    margin: unset;
+}
+
+footer {
+    padding: 1em 0;
+    width: 100%;
+}
